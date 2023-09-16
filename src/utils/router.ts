@@ -20,6 +20,7 @@ export function setupRouter(base: string = "/", routes?: Route[]) {
     })
   );
   router.resolve();
+  return router;
 }
 
 export function rerender() {
