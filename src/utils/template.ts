@@ -1,8 +1,9 @@
 import { TemplateResult, render } from "lit-html";
-import { Match } from "navigo";
+import Navigo, { Match } from "navigo";
 
 export type Template = (props: TemplateProps) => TemplateResult;
 export type TemplateProps = {
+  router?: Navigo;
   routerMatch?: Match;
 } & Record<string, any>;
 

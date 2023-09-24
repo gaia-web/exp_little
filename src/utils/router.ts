@@ -14,6 +14,7 @@ export function setupRouter(base: string = "/", routes?: Route[]) {
     router.on(path, (match) => {
       render = () =>
         renderTemplate(template, {
+          router,
           routerMatch: match,
         });
       render();
